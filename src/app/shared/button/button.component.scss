@@ -1,0 +1,18 @@
+@import "../../../styles";
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 5px 0;
+}
+
+.primary {
+  background-color: $primary-color;
+  color: $white;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}

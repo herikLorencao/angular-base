@@ -1,0 +1,11 @@
+<div class="input-field">
+  <input
+    [ngClass]="{ invalid: !valid }"
+    (focus)="onTouchedCb(true)"
+    [type]="type"
+    [placeholder]="placeholder"
+    [readonly]="readonly"
+    [(ngModel)]="value"
+  />
+  <span *ngIf="!valid">{{ getErrorMessage() }}</span>
+</div>
